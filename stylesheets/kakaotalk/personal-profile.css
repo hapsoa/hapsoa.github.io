@@ -1,0 +1,126 @@
+.util-box {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-color: #f0f0f0; }
+  .util-box > .button:hover {
+    border-bottom: 0; }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer; }
+  .button:hover {
+    color: #00B7FF;
+    border-bottom: 1px solid #444; }
+
+.background-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 430px;
+  background: url("../../images/kakao-talk/profile-background.jpeg") center;
+  background-size: cover; }
+  .background-image > .top-menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px; }
+    .background-image > .top-menu-box > a {
+      text-decoration-line: none;
+      color: white;
+      margin: 0 10px;
+      cursor: pointer; }
+  .background-image > .bottom-menu-box {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px; }
+    .background-image > .bottom-menu-box > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.3rem;
+      height: 1.3rem;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: solid 1px #eee; }
+      .background-image > .bottom-menu-box > a:hover {
+        border-color: #00B7FF; }
+        .background-image > .bottom-menu-box > a:hover > i {
+          color: #00B7FF; }
+      .background-image > .bottom-menu-box > a > i {
+        color: #eee;
+        cursor: pointer; }
+      .background-image > .bottom-menu-box > a > i.fas {
+        font-size: 0.8rem; }
+      .background-image > .bottom-menu-box > a > i.fas.fa-gift {
+        padding-bottom: 1px;
+        padding-left: 1px; }
+      .background-image > .bottom-menu-box > a > i.material-icons {
+        font-size: 1rem; }
+  .background-image > .title-image {
+    position: absolute;
+    bottom: -20px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../images/kakao-talk/title-profile.jpg");
+    background-position: 50% 20%;
+    background-size: cover;
+    border-radius: 50%; }
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 170px; }
+  .profile-content > .name {
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    text-align: center; }
+  .profile-content > .phone-number {
+    height: 20px;
+    text-align: center;
+    font-size: 0.7rem; }
+  .profile-content > .buttons-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px; }
+    .profile-content > .buttons-box > .button-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65px;
+      height: 100%;
+      margin: 0 10px; }
+      .profile-content > .buttons-box > .button-box > .icon-background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        margin-bottom: 10px;
+        background-color: #eee;
+        border-radius: 50%; }
+        .profile-content > .buttons-box > .button-box > .icon-background > i {
+          color: #533f3e; }
+        .profile-content > .buttons-box > .button-box > .icon-background > i.fas.fa-comment {
+          font-size: 1.3rem; }
+      .profile-content > .buttons-box > .button-box a {
+        text-decoration-line: none; }
+      .profile-content > .buttons-box > .button-box > .title {
+        font-size: 0.7rem; }
+
+/*# sourceMappingURL=personal-profile.css.map */

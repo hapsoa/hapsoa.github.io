@@ -1,0 +1,114 @@
+.category {
+  display: flex;
+  align-items: center; }
+  .category > a {
+    display: flex;
+    align-items: center; }
+  .category i {
+    margin: 0 10px;
+    cursor: pointer; }
+    .category i:hover {
+      color: #00B7FF; }
+  .category > .title {
+    flex: 1; }
+
+.lists {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto; }
+  .lists > .chatting-log-box {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 550px;
+    padding: 5px;
+    background-color: #fafafa; }
+    .lists > .chatting-log-box > .friend-element {
+      display: flex;
+      min-height: fit-content; }
+      .lists > .chatting-log-box > .friend-element > .image-container {
+        width: 40px;
+        margin-right: 5px; }
+        .lists > .chatting-log-box > .friend-element > .image-container > .title-image {
+          width: 100%;
+          height: 40px;
+          background-image: url("../../images/kakao-talk/title-profile.jpg");
+          background-position: 50% 20%;
+          background-size: cover;
+          border-radius: 50%; }
+      .lists > .chatting-log-box > .friend-element > .chat-bundle > .bubble-line {
+        display: flex; }
+        .lists > .chatting-log-box > .friend-element > .chat-bundle > .bubble-line > .name {
+          margin-bottom: 5px; }
+        .lists > .chatting-log-box > .friend-element > .chat-bundle > .bubble-line > .time {
+          width: fit-content;
+          align-self: flex-end;
+          margin-bottom: 5px;
+          margin-left: 5px;
+          font-size: 0.6rem;
+          color: #aaaaaa; }
+        .lists > .chatting-log-box > .friend-element > .chat-bundle > .bubble-line > i.material-icons {
+          align-self: flex-end;
+          color: red;
+          font-size: 1rem; }
+    .lists > .chatting-log-box .speech-bubble {
+      overflow-wrap: break-word;
+      padding: 5px;
+      width: fit-content;
+      max-width: 200px;
+      height: fit-content;
+      min-height: fit-content;
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+      border-radius: 5px; }
+    .lists > .chatting-log-box .moon {
+      background-color: #bbb; }
+    .lists > .chatting-log-box .self-element {
+      display: flex;
+      min-height: fit-content;
+      justify-content: flex-end; }
+      .lists > .chatting-log-box .self-element > i.material-icons {
+        align-self: flex-end;
+        margin-bottom: 4px;
+        color: red;
+        font-size: 0.8rem; }
+      .lists > .chatting-log-box .self-element > .time {
+        align-self: flex-end;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 0.6rem;
+        color: #aaaaaa; }
+      .lists > .chatting-log-box .self-element > .self {
+        color: white;
+        background-color: #000; }
+  .lists > .input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px; }
+    .lists > .input-box > .icon {
+      margin: 0 5px;
+      color: #aaa;
+      cursor: pointer; }
+      .lists > .input-box > .icon:hover {
+        color: #00B7FF; }
+    .lists > .input-box #shop {
+      font-size: 1.3rem;
+      height: fit-content;
+      margin-bottom: 3px; }
+    .lists > .input-box > input {
+      flex: 1;
+      height: 30px;
+      font-size: 1.2rem;
+      border: 0; }
+      .lists > .input-box > input:focus {
+        border: 0; }
+
+.hidden {
+  visibility: hidden; }
+
+/*# sourceMappingURL=chatting.css.map */

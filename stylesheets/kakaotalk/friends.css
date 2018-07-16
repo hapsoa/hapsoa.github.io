@@ -1,0 +1,82 @@
+.lists {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto; }
+  .lists > .my-profile {
+    width: 100%; }
+  .lists > .group {
+    width: 100%; }
+  .lists > .friends {
+    width: 100%;
+    flex: 1; }
+  .lists .title {
+    height: 20px;
+    margin: 0 10px;
+    line-height: 20px;
+    font-size: 0.6rem;
+    color: #aaaaaa; }
+  .lists .profile {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center; }
+    .lists .profile > img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 0 10px; }
+    .lists .profile > .profile-image {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 0 10px;
+      background-size: cover;
+      background-position: center; }
+    .lists .profile .profile-1 {
+      background-image: url("../../images/kakao-talk/profile-1.jpg"); }
+    .lists .profile .profile-2 {
+      background-image: url("../../images/kakao-talk/plus-friend.png"); }
+    .lists .profile .profile-3 {
+      background-image: url("../../images/kakao-talk/profile-2.jpg"); }
+    .lists .profile .profile-4 {
+      background-image: url("../../images/kakao-talk/profile-3.jpg"); }
+    .lists .profile .profile-5 {
+      background-image: url("../../images/kakao-talk/profile-4.jpg"); }
+    .lists .profile .profile-6 {
+      background-image: url("../../images/kakao-talk/profile-9.jpg"); }
+    .lists .profile .profile-7 {
+      background-image: url("../../images/kakao-talk/profile-5.jpg"); }
+    .lists .profile .profile-8 {
+      background-image: url("../../images/kakao-talk/profile-6.jpg"); }
+    .lists .profile .profile-9 {
+      background-image: url("../../images/kakao-talk/profile-7.jpg"); }
+    .lists .profile .profile-10 {
+      background-image: url("../../images/kakao-talk/profile-8.jpg"); }
+    .lists .profile .profile-11 {
+      background-image: url("../../images/kakao-talk/profile-10.jpg"); }
+    .lists .profile .name {
+      flex: 1;
+      height: 100%;
+      line-height: 46px; }
+    .lists .profile .introduce {
+      color: #aaaaaa;
+      font-size: 0.8rem;
+      height: 100%;
+      line-height: 44px;
+      margin: 0 10px; }
+    .lists .profile:hover {
+      background-color: rgba(200, 200, 200, 0.1); }
+  .lists #plus-friend > .profile-image {
+    background-color: #FBE300; }
+  .lists #plus-friend > .introduce {
+    margin: 0; }
+  .lists #plus-friend > i {
+    color: #aaaaaa;
+    height: 100%;
+    line-height: 45px;
+    font-size: 1rem; }
+
+/*# sourceMappingURL=friends.css.map */

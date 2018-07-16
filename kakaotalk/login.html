@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>kakao talk</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../stylesheets/kakaotalk/basic.css">
+        <link rel="stylesheet" href="../stylesheets/kakaotalk/login.css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="empty-column-box"></div>
+        <div class="content">
+            <div class="window-button-box">
+                <i class="material-icons" id="menu">sort</i>
+                <i class="far fa-window-minimize"></i>
+                <i class="material-icons">close</i>
+            </div>
+            <img class="logo" src="../images/kakao-talk/logo-squared.png">
+            <form class="user-info" action="" method="post">
+                <div class="info-box bottom-border">
+                    <input id="email" type="email" placeholder="카카오계정 (이메일)">
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+                <div class="info-box">
+                    <input id="password" type="password" placeholder="비밀번호">
+                </div>
+            </form>
+            <!--form.login(action="" method="post")-->
+            <!--    input(type="button" value="로그인")-->
+            <div id="login">로그인</div>
+            <div class="login-option">
+                <label>
+                    <input type="checkbox">잠금모드로 자동로그인
+                </label>
+            </div>
+            <div class="guide-id">
+                <div class="detail-explanation">모바일에서 카카오계정을 확인할 수 있습니다.</div>
+                <div class="guide">카카오계정안내</div>
+            </div>
+            <div class="guide-password">비밀번호를 잊어버리셨나요?</div>
+            <script src="../javascripts/kakaotalk/login.js"></script>
+        </div>
+        <div class="empty-column-box"></div>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>kakao talk</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheets/kakaotalk/basic.css">
+    <link rel="stylesheet" href="../stylesheets/kakaotalk/main.css">
+    <link rel="stylesheet" href="../stylesheets/kakaotalk/friends.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="empty-column-box"></div>
+<div class="content">
+    <div class="modal chat-message">
+        <div class="modal-content">
+            <div class="content-group">
+                <div class="header">메세지가 지워집니다</div>
+                <div class="text">진짜?</div>
+            </div>
+            <div class="button-group">
+                <div class="flex-empty"></div>
+                <div class="button negative">CANCEL</div>
+                <div class="button positive">OK</div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <a class="profile-button button" href="/kakaotalk/friends">
+            <i class="material-icons">person</i>
+        </a>
+        <a class="chatting-button button" href="/kakaotalk/chatting-list">
+            <i class="far fa-comment"></i>
+        </a>
+        <div class="news-button button">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <a class="etc-button button" href="/kakaotalk/configure">
+            <i class="material-icons">more_horiz</i>
+        </a>
+    </div>
+    <div class="lists">
+        <div class="my-profile">
+            <div class="title">내 프로필</div>
+            <div class="profile">
+                <div class="profile-image profile-1"></div>
+                <div class="name">허재종</div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="title">그룹</div>
+            <div class="profile" id="plus-friend">
+                <div class="profile-image profile-2"></div>
+                <div class="name">플러스친구</div>
+                <div class="introduce">8</div>
+                <i class="material-icons">arrow_forward_ios</i>
+            </div>
+        </div>
+        <div class="friends">
+            <div class="title">친구 98</div>
+            <a href="/kakaotalk/personal-profile">
+                <div class="profile">
+                    <div class="profile-image profile-3"></div>
+                    <div class="name">문재인</div>
+                    <div class="introduce">Cerca Trova</div>
+                </div>
+            </a>
+            <div class="profile">
+                <div class="profile-image profile-4"></div>
+                <div class="name">박근혜</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-5"></div>
+                <div class="name">이명박</div>
+                <div class="introduce">♡♡♡</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-6"></div>
+                <div class="name">안혜진</div>
+                <div class="introduce">안심하라구!</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-7"></div>
+                <div class="name">노무현</div>
+                <div class="introduce">이쁜혜영이</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-8"></div>
+                <div class="name">김대중</div>
+                <div class="introduce">쓰담쓰담 - 10cm</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-9"></div>
+                <div class="name">김영삼</div>
+                <div class="introduce">건강과 안전, 최고의 가치입니다</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-10"></div>
+                <div class="name">노태우</div>
+                <div class="introduce">후반전~</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image profile-11"></div>
+                <div class="name">전두환</div>
+            </div>
+        </div>
+    </div>
+    <div class="util-box">
+        <div class="button-1 button">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="button-2 button">
+            <i class="material-icons">crop_square</i>
+        </div>
+        <div class="button-3 button">
+            <i class="material-icons">arrow_back</i>
+        </div>
+    </div>
+</div>
+<div class="empty-column-box"></div>
+</body>
+</html>
