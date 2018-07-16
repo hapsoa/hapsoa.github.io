@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>kakao talk</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/basic.css">
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/main.css">
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/chatting.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="empty-column-box"></div>
+<div class="content">
+    <div class="modal chat-message">
+        <div class="modal-content">
+            <div class="content-group">
+                <div class="header">메세지가 지워집니다</div>
+                <div class="text">진짜?</div>
+            </div>
+            <div class="button-group">
+                <div class="flex-empty"></div>
+                <div class="button negative">CANCEL</div>
+                <div class="button positive">OK</div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <a href="javascript:history.back()">
+            <i class="material-icons">arrow_back</i>
+        </a>
+        <div class="title">문재인</div>
+        <i class="material-icons">search</i>
+        <i class="material-icons">view_headline</i>
+    </div>
+    <div class="lists">
+        <div class="chatting-log-box">
+            <div class="friend-element">
+                <div class="image-container">
+                    <div class="title-image"></div>
+                </div>
+                <div class="chat-bundle">
+                    <div class="name">문재인</div>
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">속으론</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">그렇게</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="title-image"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">생각안하시는거</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">다알아요</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">^__^</div>
+                        <div class="time">오후 12:28</div>
+                    </div>
+                </div>
+            </div>
+            <div class="self-element">
+                <div class="time">오후 12:28</div>
+                <div class="speech-bubble self">... 속의 생각을 이제서야 말한건데... 몰라주다니</div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container">
+                    <div class="title-image"></div>
+                </div>
+                <div class="chat-bundle">
+                    <div class="name">문재인</div>
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">그렇게 말해두</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">다</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container"></div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">알아요!!</div>
+                        <div class="time">오후 12:30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container">
+                    <div class="title-image"></div>
+                </div>
+                <div class="chat-bundle">
+                    <div class="bubble-line">
+                        <div class="speech-bubble moon">^^</div>
+                        <div class="time">오후 12:31</div>
+                    </div>
+                </div>
+            </div>
+            <div class="self-element">
+                <i class="material-icons">close</i>
+                <div class="time">오후 12:28</div>
+                <div class="speech-bubble self">너도 눈찌를깡</div>
+            </div>
+            <div class="friend-element">
+                <div class="image-container">
+                    <div class="title-image"></div>
+                </div>
+                <div class="chat-bundle">
+                    <div class="name">문재인</div>
+                    <div class="bubble-line">
+                        <img src="/images/kakao-talk/chat-imoticon.png" alt="imoticon image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-box">
+            <i class="material-icons icon" id="sender">add_box</i>
+            <input class="typing-box" type="text" id="messageInput">
+            <i class="material-icons icon">mood</i>
+            <div class="icon" id="shop">#</div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="/javascripts/kakaotalk/firebase.js"></script>
+        <script src="/javascripts/kakaotalk/chatting.js"></script>
+    </div>
+    <div class="util-box">
+        <div class="button-1 button">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="button-2 button">
+            <i class="material-icons">crop_square</i>
+        </div>
+        <div class="button-3 button">
+            <i class="material-icons">arrow_back</i>
+        </div>
+    </div>
+</div>
+<div class="empty-column-box"></div>
+</body>
+</html>

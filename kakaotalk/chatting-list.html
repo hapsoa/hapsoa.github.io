@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>kakao talk</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/basic.css">
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/main.css">
+    <link rel="stylesheet" href="/stylesheets/kakaotalk/chatting-list.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="empty-column-box"></div>
+<div class="content">
+    <div class="modal chat-message">
+        <div class="modal-content">
+            <div class="content-group">
+                <div class="header">메세지가 지워집니다</div>
+                <div class="text">진짜?</div>
+            </div>
+            <div class="button-group">
+                <div class="flex-empty"></div>
+                <div class="button negative">CANCEL</div>
+                <div class="button positive">OK</div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <a class="profile-button button" href="/kakaotalk/friends">
+            <i class="material-icons">person</i>
+        </a>
+        <a class="chatting-button button" href="/kakaotalk/chatting-list">
+            <i class="far fa-comment"></i>
+        </a>
+        <div class="news-button button">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <a class="etc-button button" href="/kakaotalk/configure">
+            <i class="material-icons">more_horiz</i>
+        </a>
+    </div>
+    <div class="lists">
+        <div class="chatting-list">
+            <a class="profile-image profile-1" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">이승만</div>
+                <div class="sentence">
+                    으아아아아ㅏㅏ아ㅏ<br>모르겠어여ㅓㅓ어어ㅓㅓㅓㅓ어ㅓ어ㅓ러ㅓㅑ
+                </div>
+            </a>
+            <div class="time">오전 11:18</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-6" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">윤보선</div>
+                <div class="sentence">화이링이에요~</div>
+            </a>
+            <div class="time">오전 4:03</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-9" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">박정희</div>
+                <div class="sentence">MaboPlayLogo.swift</div>
+            </a>
+            <div class="time">18/6/10</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-11" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">최규하</div>
+                <div class="sentence">넵넵 내일 봬여!!</div>
+            </a>
+            <div class="time">18/6/9</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-1" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">전두환</div>
+                <div class="sentence">넵 쉬세요~</div>
+            </a>
+            <div class="time">18/6/9</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-2" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">노태우</div>
+                <div class="sentence">안녕하세요 배달의민족입니다</div>
+            </a>
+            <div class="time">18/6/9</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-4" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">김영삼</div>
+                <div class="sentence">와</div>
+            </a>
+            <div class="time">18/6/8</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-5" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">김대중</div>
+                <div class="sentence">관심있는분 있을까봐 공유드려요</div>
+            </a>
+            <div class="time">18/6/8</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-7" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">노무현</div>
+                <div class="sentence">config.zip</div>
+            </a>
+            <div class="time">18/6/7</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-8" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">이명박</div>
+                <div class="sentence">결제가 완료되었습니다.</div>
+            </a>
+            <div class="time">18/6/7</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-10" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">박근혜</div>
+                <div class="sentence">나가고 싶어요</div>
+            </a>
+            <div class="time">18/6/7</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-1" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">문재인</div>
+                <div class="sentence">북미 회담이 잘돼야할텐데</div>
+            </a>
+            <div class="time">18/6/6</div>
+        </div>
+        <div class="chatting-list">
+            <a class="profile-image profile-1" href="/kakaotalk/personal-profile"></a>
+            <a class="content-box" href="/kakaotalk/chatting">
+                <div class="name">문재인</div>
+                <div class="sentence">북미 회담이 잘돼야할텐데</div>
+            </a>
+            <div class="time">18/6/6</div>
+        </div>
+    </div>
+    <div class="util-box">
+        <div class="button-1 button">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="button-2 button">
+            <i class="material-icons">crop_square</i>
+        </div>
+        <div class="button-3 button">
+            <i class="material-icons">arrow_back</i>
+        </div>
+    </div>
+</div>
+<div class="empty-column-box"></div>
+</body>
+</html>

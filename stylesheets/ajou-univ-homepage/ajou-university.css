@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  min-width: 1024px;
+  font-family: "Nanum Gothic", serif; }
+
+.small-menu-box {
+  width: 100%;
+  height: 35px;
+  background-color: #333333;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  padding: 0;
+  display: flex;
+  align-items: center; }
+  .small-menu-box > .left-empty-box {
+    flex: 5; }
+  .small-menu-box > .home-button {
+    margin: 0 5px;
+    line-height: 35px;
+    cursor: pointer; }
+  .small-menu-box > .login-button {
+    margin: 0 5px;
+    line-height: 35px;
+    cursor: pointer; }
+  .small-menu-box > .portal-button {
+    margin: 0 5px;
+    line-height: 35px;
+    cursor: pointer; }
+  .small-menu-box > .language-box {
+    margin: 0 5px;
+    line-height: 10px;
+    height: 24px;
+    padding: 6px 0 6px 10px;
+    background-color: #233043;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    .small-menu-box > .language-box:active {
+      background-color: crimson; }
+  .small-menu-box > .right-empty-box {
+    flex: 1; }
+  .small-menu-box > form {
+    display: flex;
+    align-items: center; }
+
+input {
+  height: 20px;
+  line-height: 35px; }
+
+#submit-button {
+  width: 25px;
+  height: 25px;
+  background-image: url(/../../images/ajou-univ-homepage/search.gif);
+  background-size: 100% 100%; }
+
+.main-menu-grid {
+  width: 100%;
+  height: 90px;
+  background-color: #012960;
+  display: flex;
+  align-items: center; }
+  .main-menu-grid > .left-empty-box {
+    flex: 1; }
+  .main-menu-grid > .school-logo {
+    height: 50px;
+    cursor: pointer; }
+  .main-menu-grid > .middle-empty-box {
+    flex: 0.5; }
+  .main-menu-grid > .menu {
+    width: 112px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.1rem;
+    cursor: pointer; }
+    .main-menu-grid > .menu:hover {
+      background-color: white;
+      color: black;
+      text-decoration-line: underline; }
+  .main-menu-grid > .right-empty-box {
+    flex: 1; }
+
+.ajou-main-image {
+  width: 100%;
+  height: 580px;
+  background-size: cover;
+  background: url(../../images/ajou-univ-homepage/ajou-main-image2.gif) center;
+  position: relative;
+  margin-bottom: 50px; }
+  .ajou-main-image > img.slide-left {
+    position: absolute;
+    left: 200px;
+    bottom: 30px;
+    cursor: pointer; }
+  .ajou-main-image > img.slide-right {
+    position: absolute;
+    left: 240px;
+    bottom: 30px;
+    cursor: pointer; }
+  .ajou-main-image i.material-icons {
+    position: absolute;
+    cursor: pointer;
+    font-size: 0.5rem;
+    color: #999; }
+  .ajou-main-image i#point-1 {
+    left: 295px;
+    bottom: 40px;
+    color: white; }
+  .ajou-main-image i#point-2 {
+    left: 310px;
+    bottom: 40px; }
+  .ajou-main-image i#point-3 {
+    left: 325px;
+    bottom: 40px; }
+  .ajou-main-image i#point-4 {
+    left: 340px;
+    bottom: 40px; }
+  .ajou-main-image i#point-5 {
+    left: 355px;
+    bottom: 40px; }
+
+.left-empty-box {
+  flex: 1; }
+
+.right-empty-box {
+  flex: 1; }
+
+.content-box {
+  min-width: 1024px; }
+
+section.news {
+  margin-bottom: 50px; }
+  section.news > .title-grid {
+    display: flex;
+    height: 50px; }
+    section.news > .title-grid > .content-box {
+      position: relative; }
+      section.news > .title-grid > .content-box > .news-title {
+        font-size: 1.5rem;
+        color: #555;
+        cursor: pointer; }
+      section.news > .title-grid > .content-box > .plus-button {
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        cursor: pointer; }
+  section.news > .article-grid {
+    display: flex; }
+    section.news > .article-grid > .content-box {
+      display: flex;
+      height: 312px; }
+      section.news > .article-grid > .content-box .article-title {
+        height: 39px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 19px;
+        padding: 10px 0;
+        cursor: pointer; }
+        section.news > .article-grid > .content-box .article-title:hover {
+          text-decoration-line: underline; }
+      section.news > .article-grid > .content-box .article-body {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        cursor: pointer;
+        white-space: pre-wrap; }
+        section.news > .article-grid > .content-box .article-body:hover {
+          text-decoration-line: underline; }
+      section.news > .article-grid > .content-box .middle-empty-box {
+        width: 25px; }
+      section.news > .article-grid > .content-box > article.article-1-box {
+        width: 324px;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative; }
+        section.news > .article-grid > .content-box > article.article-1-box img.article-1-image {
+          height: 218px; }
+          section.news > .article-grid > .content-box > article.article-1-box img.article-1-image:hover + .curtain {
+            background-color: rgba(0, 0, 0, 0.3); }
+        section.news > .article-grid > .content-box > article.article-1-box .curtain {
+          position: absolute;
+          width: 100%;
+          height: 218px;
+          top: 0;
+          bottom: 0;
+          pointer-events: none; }
+      section.news > .article-grid > .content-box > article.article-2-box {
+        width: 324px;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative; }
+        section.news > .article-grid > .content-box > article.article-2-box img.article-2-image {
+          height: 218px; }
+          section.news > .article-grid > .content-box > article.article-2-box img.article-2-image:hover + .curtain {
+            background-color: rgba(0, 0, 0, 0.3); }
+        section.news > .article-grid > .content-box > article.article-2-box .curtain {
+          position: absolute;
+          width: 100%;
+          height: 218px;
+          top: 0;
+          bottom: 0;
+          pointer-events: none; }
+      section.news > .article-grid > .content-box > article.article-3-box {
+        width: 324px;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative; }
+        section.news > .article-grid > .content-box > article.article-3-box img.article-3-image {
+          height: 218px; }
+          section.news > .article-grid > .content-box > article.article-3-box img.article-3-image:hover + .curtain {
+            background-color: rgba(0, 0, 0, 0.3); }
+        section.news > .article-grid > .content-box > article.article-3-box .curtain {
+          position: absolute;
+          width: 100%;
+          height: 218px;
+          top: 0;
+          bottom: 0;
+          pointer-events: none; }
+  section.news .article-1-image, section.news .article-2-image, section.news .article-3-image {
+    cursor: pointer; }
+
+section.notice {
+  margin-bottom: 50px; }
+  section.notice .title-grid {
+    display: flex;
+    height: 50px; }
+    section.notice .title-grid .content-box {
+      position: relative; }
+      section.notice .title-grid .content-box .notice-title {
+        font-size: 1.5rem;
+        color: #555;
+        cursor: pointer; }
+      section.notice .title-grid .content-box .plus-button {
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        cursor: pointer; }
+  section.notice .article-grid {
+    display: flex; }
+    section.notice .article-grid > .content-box {
+      display: flex;
+      height: 190px; }
+      section.notice .article-grid > .content-box article.article-1-box {
+        width: 324px;
+        height: 100%;
+        line-height: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        section.notice .article-grid > .content-box article.article-1-box img.article-1-image {
+          height: 218px; }
+        section.notice .article-grid > .content-box article.article-1-box .notice-line {
+          margin-bottom: 10px;
+          height: 1.1rem;
+          display: flex; }
+          section.notice .article-grid > .content-box article.article-1-box .notice-line .category {
+            background-color: #797979;
+            color: white;
+            margin-right: 15px;
+            padding: 0 15px;
+            font-size: 0.8rem;
+            height: 100%;
+            line-height: 1.1rem; }
+          section.notice .article-grid > .content-box article.article-1-box .notice-line .title {
+            font-size: 0.9rem;
+            height: 100%;
+            line-height: 1.1rem;
+            cursor: pointer; }
+            section.notice .article-grid > .content-box article.article-1-box .notice-line .title:hover {
+              text-decoration-line: underline; }
+      section.notice .article-grid > .content-box article.article-2-box {
+        width: 324px;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        section.notice .article-grid > .content-box article.article-2-box img.article-2-image {
+          height: 190px;
+          cursor: pointer; }
+      section.notice .article-grid > .content-box article.article-3-box {
+        width: 324px;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        section.notice .article-grid > .content-box article.article-3-box .notice-line {
+          display: flex; }
+          section.notice .article-grid > .content-box article.article-3-box .notice-line .date-box {
+            width: 50px;
+            height: 52px;
+            background-color: #012a60;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+            section.notice .article-grid > .content-box article.article-3-box .notice-line .date-box .month {
+              font-size: 0.6rem; }
+            section.notice .article-grid > .content-box article.article-3-box .notice-line .date-box .day {
+              font-size: 1.1rem; }
+          section.notice .article-grid > .content-box article.article-3-box .notice-line .title {
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            cursor: pointer; }
+            section.notice .article-grid > .content-box article.article-3-box .notice-line .title:hover {
+              text-decoration-line: underline; }
+      section.notice .article-grid > .content-box .middle-empty-box {
+        width: 25px; }
+
+/*# sourceMappingURL=ajou-university.css.map */
