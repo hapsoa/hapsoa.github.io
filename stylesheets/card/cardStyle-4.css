@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #cce; }
+
+.grid {
+  display: flex;
+  width: 100%;
+  height: 530px; }
+
+.cell-size-4 {
+  flex: 4;
+  height: 100%; }
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/card/monitor.jpg");
+  background-size: 100% 100%;
+  transition-property: transform;
+  transition-duration: 0.4s; }
+
+.image-box {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  position: relative; }
+  .image-box > .heart-box {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 7px 15px;
+    color: rgba(0, 0, 0, 0); }
+  .image-box > .collect-box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 7px 15px; }
+  .image-box:hover > .heart-box {
+    color: black;
+    border-color: #dddddd; }
+  .image-box:hover > .collect-box {
+    color: black;
+    border-color: #dddddd; }
+
+.image:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+  .image:hover > .image-cover {
+    background-color: rgba(10, 10, 10, 0.3); }
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  transition-property: background-color;
+  transition-duration: 0.4s; }
+
+.contents {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  padding: 5%; }
+
+.contents-title {
+  margin-bottom: 3%;
+  cursor: pointer; }
+
+.contents-bundle {
+  display: flex;
+  justify-content: space-between; }
+
+.cell-empty-8 {
+  flex: 8; }
+
+/*# sourceMappingURL=cardStyle-4.css.map */
