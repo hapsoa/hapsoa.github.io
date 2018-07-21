@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/calculator/layout.css">
+    <link rel="stylesheet" href="/stylesheets/calculator/content.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="empty-column-box"></div>
+<div class="content">
+    <div class="window-bar-grid">
+        <div class="circle-button close"></div>
+        <div class="circle-button minimize"></div>
+        <div class="circle-button maximize"></div>
+    </div>
+    <div class="value-grid" id="value">0</div>
+    <div class="calculation-grid">
+        <div class="cal-bundle">
+            <div class="cal-button top-button" id="ac">AC</div>
+            <div class="cal-button top-button" id="convert-sign">+/-</div>
+            <div class="cal-button top-button" id="percent">%</div>
+            <div class="cal-button right-button operator" operator="/" id="division">÷</div>
+        </div>
+        <div class="cal-bundle">
+            <div class="cal-button number" id="seven">7</div>
+            <div class="cal-button number" id="eight">8</div>
+            <div class="cal-button number" id="nine">9</div>
+            <div class="cal-button right-button operator" operator="*" id="multiplication">×</div>
+        </div>
+        <div class="cal-bundle">
+            <div class="cal-button number" id="four">4</div>
+            <div class="cal-button number" id="five">5</div>
+            <div class="cal-button number" id="six">6</div>
+            <div class="cal-button right-button operator" operator="-" id="subtraction">-</div>
+        </div>
+        <div class="cal-bundle">
+            <div class="cal-button number" id="one">1</div>
+            <div class="cal-button number" id="two">2</div>
+            <div class="cal-button number" id="three">3</div>
+            <div class="cal-button right-button operator" operator="+" id="addition">+</div>
+        </div>
+        <div class="cal-bundle last-bundle">
+            <div class="cal-button number" id="zero">0</div>
+            <div class="cal-button" id="dot">.</div>
+            <div class="cal-button right-button" id="equal">=</div>
+        </div>
+    </div>
+    <script src="/javascripts/calculator/content.js"></script>
+</div>
+<div class="empty-column-box"></div>
+</body>
+</html>
