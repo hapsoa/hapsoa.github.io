@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+}
+
+.main-content-box {
+    order: 1;
+    flex: 1;
+    background-color: cornflowerblue;
+    height: 100%;
+
+    display: table;
+    position: relative;
+}
+
+.modal-out-box {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+
+    z-index: 5;
+
+    overflow: hidden;
+}
+
+.modal-box {
+    background-color: rgba(0,0,0,0);
+
+    height: 150px;
+    border: rgba(0,0,0,0);
+    border-radius: 10px;
+
+    margin: 0 auto 100px;
+    width: 400px;
+    max-width: 400px;
+    overflow: hidden;
+
+    z-index: 6;
+
+    color: rgba(0,0,0,0);
+
+}
+
+.modal-title {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 30px;
+}
+
+.modal-body {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+}
+
+.modal-option {
+    width: 100%;
+    height: 40px;
+
+}
+
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    pointer-events: none;
+
+    z-index: 4;
+}
+
+
+
+.button-box {
+    order: 2;
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 22px;
+    color: #eee;
+
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    font-size: 1.1rem;
+    padding-left: 13px;
+    align-self: center;
+}
+
+.button-box:hover + .main-content-box > .transparent-box {
+    transition-property: background-color;
+    transition-duration: 1s;
+    background-color: rgba(0,0,0,0.3);
+    pointer-events: all;
+}
+
+.button-box:hover + .main-content-box .modal-box {
+    transition-property: background-color, margin, color;
+    transition-duration: 1s;
+    background-color: #fff;
+    border: solid 1px #444;
+    margin: 0 auto 0;
+    color: rgba(0,0,0,1);
+
+}
+
+.button-box:hover + .main-content-box .modal-body {
+    transition-property: border;
+    transition-duration: 1s;
+    border-top: #bbb solid 1px;
+    border-bottom: #bbb solid 1px;
+}
+
+i {
+    padding-bottom: 3px;
+}
+
+
+
