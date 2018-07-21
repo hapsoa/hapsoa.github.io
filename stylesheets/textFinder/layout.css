@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  font-family: "Nanum Gothic", serif;
+  background-color: #d0cfcf; }
+
+.empty-column-box {
+  flex: 1; }
+
+.main {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  min-width: 1200px;
+  height: 100%;
+  background-color: white; }
+
+/*# sourceMappingURL=layout.css.map */
