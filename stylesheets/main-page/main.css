@@ -1,0 +1,70 @@
+.main .title {
+  font-size: 3rem;
+  padding: 100px 150px; }
+
+.main .card-grid {
+  width: 100%;
+  display: flex;
+  margin: 20px 0; }
+  .main .card-grid .card-cell {
+    flex: 1;
+    background-color: rgba(200, 200, 200, 0.2);
+    box-shadow: 0 0 20px 3px #ddd inset; }
+  .main .card-grid .column-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+  .main .card-grid .normal-size-cell {
+    height: 300px; }
+  .main .card-grid .left {
+    margin-right: 10px; }
+  .main .card-grid .right {
+    margin-left: 10px; }
+  .main .card-grid .bottom {
+    margin-bottom: 20px; }
+
+.main a {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transition-property: background-size;
+  transition-duration: 1s; }
+  .main a[href="/calculator"] {
+    background-image: url("../../images/main-page/calculator-cover2.png"); }
+  .main a[href="/kakaotalk/login"] {
+    background-image: url("../../images/main-page/kakaotalk-cover.png"); }
+  .main a[href="/fractal/education"] {
+    background-image: url("../../images/main-page/fractal-cover2.png"); }
+  .main a[href="/textFinder"] {
+    background-image: url("../../images/main-page/textFinder-cover.png"); }
+  .main a[href="/firebase"] {
+    background-image: url("../../images/main-page/firebase-cover.png"); }
+  .main a[href="/ajou"] {
+    background-image: url("../../images/main-page/ajou-cover2.png"); }
+  .main a[href="/modal"] {
+    background-image: url("../../images/main-page/modal-cover.png"); }
+  .main a[href="/grid-1"] {
+    background-image: url("../../images/main-page/grid-1-cover.png"); }
+  .main a[href="/card-4"] {
+    background-image: url("../../images/main-page/card-4-cover.png"); }
+  .main a[href="/table"] {
+    background-image: url("../../images/main-page/table-cover.png"); }
+  .main a:hover > .curtain {
+    background-color: rgba(100, 100, 100, 0.2); }
+  .main a > .curtain {
+    width: 100%;
+    height: 100%; }
+
+.main .big {
+  height: 500px;
+  background-color: rgba(200, 200, 200, 0.2);
+  box-shadow: 0 0 20px 3px #ddd inset; }
+
+.main #fractal, .main #card-4 {
+  background-position: center;
+  background-size: auto 100%; }
+
+.main #grid-1, .main #table {
+  background-position: center; }
+
+/*# sourceMappingURL=main.css.map */

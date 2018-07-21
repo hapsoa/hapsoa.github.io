@@ -130,6 +130,8 @@ function draw() {
     snowGenerator.renderSnow();
 
     // filter(BLUR, 3);
+
+
 }
 
 

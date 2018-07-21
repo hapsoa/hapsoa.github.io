@@ -1,10 +1,70 @@
+<!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--p5 js-->
+    <script src="./javascripts/p5.js"></script>
+    <script src="./javascripts/addons/p5.dom.js"></script>
+    <script src="./javascripts/addons/p5.sound.js"></script>
+    <!-- lodash-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <!-- font-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <!-- icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css-->
+    <link rel="stylesheet" href="./stylesheets/main-page/layout.css">
+    <link rel="stylesheet" href="./stylesheets/main-page/main.css">
 </head>
-
 <body>
-Jaejong
+<div id="sketch-holder"></div>
+<div class="empty-column-box"></div>
+<div class="main">
+    <div class="title">Jaejong</div>
+    <div class="card-grid">
+        <a class="card-cell normal-size-cell left" href="/calculator">
+            <div class="curtain"></div>
+        </a>
+        <a class="card-cell normal-size-cell right" href="/kakaotalk/login">
+            <div class="curtain"></div>
+        </a>
+    </div>
+    <a class="card-grid big" href="/fractal/education" id="fractal">
+        <div class="curtain"></div>
+    </a>
+    <div class="card-grid">
+        <div class="column-cards left">
+            <a class="card-cell normal-size-cell bottom" href="/textFinder">
+                <div class="curtain"></div>
+            </a>
+            <a class="card-cell normal-size-cell" href="/firebase">
+                <div class="curtain"></div>
+            </a>
+        </div>
+        <a class="card-cell right" href="/ajou">
+            <div class="curtain"></div>
+        </a>
+    </div>
+    <a class="card-grid big" href="/modal">
+        <div class="curtain"></div>
+    </a>
+    <div class="card-grid">
+        <a class="card-cell normal-size-cell left" href="/grid-1" id="grid-1">
+            <div class="curtain"></div>
+        </a>
+        <a class="card-cell normal-size-cell right" href="/card-4" id="card-4">
+            <div class="curtain"></div>
+        </a>
+    </div>
+    <a class="card-grid big" href="/table" id="table">
+        <div class="curtain"></div>
+    </a>
+    <script src="./javascripts/main-page/sketch.js"></script>
+</div>
+<div class="empty-column-box"></div>
 </body>
-
 </html>
