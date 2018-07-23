@@ -39,8 +39,12 @@ const snowGenerator = new function () {
             // 모든 눈이 순간적으로 커지고, 눈 생성도 순간적으로 많아진다.
 
             snowArray.forEach((element) => {
-                if (element.size < volume * 2000)
+                if (element.size < volume * 2000) {
                     element.size = volume * 2000;
+                    if (element.size > 150)
+                        element.size = 150;
+                }
+
             });
 
         }
@@ -81,11 +85,11 @@ const snowGenerator = new function () {
             // snow의 사이즈가 10보다 클 때 점점 10으로 간다
             if (element.size > 10) {
                 if (element.randomReduce < 1)
-                    element.size -= 0.2;
+                    element.size -= 0.4;
                 else if (element.randomReduce < 2)
-                    element.size -= 3;
+                    element.size -= 1;
                 else
-                    element.size -= 6;
+                    element.size -= 3;
 
             }
             else if (element.size < 10) {
