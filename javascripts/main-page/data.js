@@ -25,7 +25,7 @@ const dataManager = new function () {
     });
     dataArray.push({
         title: 'Fractal',
-        href: '/fractal/education',
+        href: '/fractal',
         cellSize: 'big',
         imagePosition: 'img-center',
         tag: [
