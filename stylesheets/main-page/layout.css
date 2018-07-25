@@ -12,8 +12,7 @@ body {
   flex: 1; }
 
 .main {
-  width: 1200px;
-  min-width: 1200px;
+  width: 1024px;
   height: 100%; }
 
 #sketch-holder {

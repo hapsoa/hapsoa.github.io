@@ -2,38 +2,55 @@
   font-size: 3rem;
   padding: 100px 150px; }
 
-.main .card-grid {
-  width: 100%;
-  display: flex;
-  margin: 20px 0; }
-  .main .card-grid .card-cell {
-    flex: 1;
-    background-color: rgba(200, 200, 200, 0.2);
-    box-shadow: 0 0 20px 3px #ddd inset; }
-  .main .card-grid .column-cards {
-    flex: 1;
+.main .grid {
+  display: inline-block;
+  width: 100%; }
+
+.main .grid-item {
+  margin-bottom: 20px; }
+  .main .grid-item > .cell-title {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height: 1.5rem; }
+  .main .grid-item > .tags {
     display: flex;
-    flex-direction: column; }
-  .main .card-grid .normal-size-cell {
-    height: 300px; }
-  .main .card-grid .left {
-    margin-right: 10px; }
-  .main .card-grid .right {
-    margin-left: 10px; }
-  .main .card-grid .bottom {
-    margin-bottom: 20px; }
+    width: 100%; }
+    .main .grid-item > .tags > .empty-flex {
+      flex: 1; }
+    .main .grid-item > .tags > .tag {
+      height: 1.2rem;
+      padding-left: 5px;
+      font-size: 1rem;
+      text-align: end;
+      cursor: pointer;
+      transition-property: color;
+      transition-duration: 0.7s; }
+      .main .grid-item > .tags > .tag:hover {
+        color: #00B7FF; }
+
+.main .bottom {
+  margin-bottom: 20px; }
+
+.main .img-center {
+  background-position: center;
+  background-size: auto 100%; }
+
+.main .img-top {
+  background-position: top;
+  background-size: 100% auto; }
 
 .main a {
-  background-position: center top;
+  display: block;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  transition-property: background-size;
-  transition-duration: 1s; }
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(170, 170, 170, 0.2); }
   .main a[href="/calculator"] {
-    background-image: url("../../images/main-page/calculator-cover2.png"); }
+    background-image: url("../../images/main-page/calculator-cover3.png"); }
   .main a[href="/kakaotalk/login"] {
-    background-image: url("../../images/main-page/kakaotalk-cover.png"); }
-  .main a[href="/fractal"] {
+    background-image: url("../../images/main-page/kakaotalk-cover2.png"); }
+  .main a[href="/fractal/education"] {
     background-image: url("../../images/main-page/fractal-cover2.png"); }
   .main a[href="/textFinder"] {
     background-image: url("../../images/main-page/textFinder-cover.png"); }
@@ -50,21 +67,43 @@
   .main a[href="/table"] {
     background-image: url("../../images/main-page/table-cover.png"); }
   .main a:hover > .curtain {
-    background-color: rgba(100, 100, 100, 0.2); }
+    background-color: rgba(100, 100, 100, 0.3); }
   .main a > .curtain {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: 0.6s; }
 
-.main .big {
-  height: 500px;
-  background-color: rgba(200, 200, 200, 0.2);
-  box-shadow: 0 0 20px 3px #ddd inset; }
+@media screen and (min-width: 1024px) {
+  .grid-sizer {
+    width: 49%; }
+  .gutter-sizer {
+    width: 2%; }
+  .small-width {
+    width: 49%; }
+  .big-width {
+    width: 100%; }
+  .small-height {
+    height: 250px; }
+  .long-height {
+    height: calc(520px + 1.2rem + 1.5rem); }
+  .big-height {
+    height: 500px; } }
 
-.main #fractal, .main #card-4 {
-  background-position: center;
-  background-size: auto 100%; }
-
-.main #grid-1, .main #table {
-  background-position: center; }
+@media screen and (max-width: 1024px) {
+  .grid-sizer {
+    width: 100%; }
+  .gutter-sizer {
+    width: 0; }
+  .small-width {
+    width: 100%; }
+  .big-width {
+    width: 100%; }
+  .small-height {
+    height: 250px; }
+  .long-height {
+    height: 250px; }
+  .big-height {
+    height: 250px; } }
 
 /*# sourceMappingURL=main.css.map */
