@@ -47,7 +47,7 @@
   background-color: rgba(200, 200, 200, 0.2);
   border: 1px solid rgba(170, 170, 170, 0.2); }
   .main a[href="/calculator"] {
-    background-image: url("../../images/main-page/calculator-cover3.png"); }
+    background-image: url("../../images/main-page/calculator-cover.png"); }
   .main a[href="/kakaotalk/login"] {
     background-image: url("../../images/main-page/kakaotalk-cover2.png"); }
   .main a[href="/fractal"] {

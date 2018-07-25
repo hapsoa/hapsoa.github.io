@@ -259,6 +259,8 @@ const dataManager = new function () {
         this.doSearch();
 
     });
+
+    console.log('hi');
 };
 
 
